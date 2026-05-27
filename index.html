@@ -305,7 +305,7 @@
       const res = await fetch(HEALTH_URL, { signal: AbortSignal.timeout(3000) });
       if (res.ok) {
         dot.className = "status-dot online";
-        txt.textContent = "API online · http://127.0.0.1:8000";
+        txt.textContent = "API online · https://salary-predict-frontend.onrender.com/";
       } else { throw new Error(); }
     } catch {
       dot.className = "status-dot offline";
